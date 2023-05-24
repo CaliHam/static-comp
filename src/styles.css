@@ -1,0 +1,46 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+/* SIDE NAV AREA */
+
+#user-nav, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 1;
+}
+
+#profile-pic {
+    height: 50%;
+    width: auto;
+}
+
+#profile-pic > figcaption {
+    text-align: center;
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* MAIN PAGE */
+
+main {
+    order: 2;
+}

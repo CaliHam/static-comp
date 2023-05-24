@@ -8,20 +8,40 @@
         <title>NPC Job Listing</title>
     </head>
     <body>
-        <aside>
-            <figure>
-                <img src="assets/images/Bolson.png" alt="Bolson Profile Picture">
-                <figcaption>Bolson</figcaption>
+        <aside id="user-nav">
+            <figure id="profile-pic">
+                <img src="../assets/images/Bolson.png" alt="Bolson Profile Picture">
+                <figcaption>Bolson ⌄</figcaption>
             </figure>
-            <nav id="main-nav">
-
-            </nav>
-            <nav id="admin-nav">
-
-            </nav>
-            <select id="categories-select">
-
-            </select>
+            <div id="main-nav">
+                <h2>Main</h2>
+                <nav class="side-nav">
+                    <button type="button">🏠 HOME</button>
+                    <button type="button">💼 JOBS</button>
+                    <button type="button">📄 RESUMES</button>
+                    <button type="button">📋 TASKS</button>
+                    <button type="button">🗓️ CALENDAR</button>
+                </nav>
+            </div>
+            <div id="admin-nav">
+                <h2>Admin</h2>
+                <nav class="side-nav">
+                    <button type="button">👥 USERS</button>
+                    <button type="button">📍 LOCATIONS</button>
+                    <button type="button">📈 WORKFLOWS</button>
+                    <button type="button">📒 JOB BOARDS</button>
+                    <button type="button">💬 SOCIAL</button>
+                </nav>
+            </div>
+            <div id="categories-select">
+                <h2>Categories</h2>
+                <select class="side-nav">
+                    <option value="admin">Administration</option>
+                    <option value="design">Design</option>
+                    <option value="executive">Executive</option>
+                    <option value="hr">Human Resources</option>
+                </select>
+            </div>
         </aside>
         <main>
             <header>
@@ -42,7 +62,7 @@
                 <!-- buttons for pages -->
             </nav>
             <figure id="applicant-chart">
-                <img src="assets/images/Applicants Chart - clear.png" alt="Charts of Total Applicants">
+                <img src="../assets/images/Applicants Chart - clear.png" alt="Charts of Total Applicants">
             </figure>
             <hr>
             <section>
