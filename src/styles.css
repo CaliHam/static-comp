@@ -129,6 +129,7 @@ main {
 
 #listing-title > p {
     margin: 5px;
+    color: gray;
 }
 
 #listing-title > h1 {
@@ -165,6 +166,28 @@ main {
 #location {
     height: 15px;
     width: auto;
+}
+
+/* JOB PAGE NAV */
+
+#job-page-nav {
+    display: flex;
+    justify-content: flex-start;
+    width: -webkit-fill-available;
+    /* margin-left: 25px; */
+}
+
+#job-page-nav > button {
+    font-size: small;
+    font-weight: 500;
+    color: gray;
+    padding: 0px 0px 17px 0px;
+    margin: 5px 38px;
+}
+
+#selected {
+    color: black !important;
+    border-bottom: 4px solid rgb(0, 179, 255);
 }
 
 #applicant-chart {
