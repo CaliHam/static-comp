@@ -9,8 +9,8 @@
     </head>
     <body>
         <aside id="user-nav">
-            <figure id="profile-pic">
-                <img src="../assets/images/Bolson.png" alt="Bolson Profile Picture">
+            <figure id="user-info">
+                <img src="../assets/images/Bolson.png" id="profile-pic" alt="Bolson Profile Picture">
                 <figcaption>Bolson ⌄</figcaption>
             </figure>
             <div id="main-nav">
@@ -33,15 +33,17 @@
                     <button type="button">💬 SOCIAL</button>
                 </nav>
             </div>
-            <div id="categories-select">
+            <form id="categories-select">
                 <h2>Categories</h2>
-                <select class="side-nav">
-                    <option value="admin">Administration</option>
-                    <option value="design">Design</option>
-                    <option value="executive">Executive</option>
-                    <option value="hr">Human Resources</option>
-                </select>
-            </div>
+                <input type="checkbox" class="admin" checked="checked">
+                <label for="admin" class="admin"> Administration</label><br>
+                <input type="checkbox" class="design" value="design">
+                <label for="design" class="design"> Design</label><br>
+                <input type="checkbox" class="exec" value="exec">
+                <label for="exec" class="exec"> Executive</label><br>
+                <input type="checkbox" class="hr" value="hr">
+                <label for="hr" class="hr"> Human Resources</label><br>
+            </form>
         </aside>
         <main>
             <header>
@@ -62,7 +64,7 @@
                 <!-- buttons for pages -->
             </nav>
             <figure id="applicant-chart">
-                <img src="../assets/images/Applicants Chart - clear.png" alt="Charts of Total Applicants">
+                <img src="../assets/images/Applicants Chart - clear.png" id="chart" alt="Charts of Total Applicants">
             </figure>
             <hr>
             <section>

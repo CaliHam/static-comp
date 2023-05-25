@@ -21,12 +21,25 @@ body {
     order: 1;
 }
 
+#user-nav {
+    width: 15%;
+    height: 100vh;
+    color: white;
+    background-color: #012A4A;
+}
+
+#user-info {
+    margin: 25px;
+    width: auto;
+    height: 70px;
+}
+
 #profile-pic {
-    height: 50%;
+    height: 80%;
     width: auto;
 }
 
-#profile-pic > figcaption {
+#user-info > figcaption {
     text-align: center;
 }
 
@@ -35,7 +48,30 @@ body {
     flex-direction: column;
 }
 
-button:hover {
+h2 {
+    color: #2A6F97;
+    font-size: small;
+    margin-top: 40px;
+}
+
+button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    align-self: flex-start;
+    margin: 6px;
+    font-size: 15px;
+}
+
+input {
+    margin-bottom: 25px;
+}
+
+label {
+    font-size: small;
+}
+
+button:hover, input:hover {
     cursor: pointer;
 }
 
@@ -43,4 +79,13 @@ button:hover {
 
 main {
     order: 2;
+}
+
+#applicant-chart {
+    display: flex;
+    justify-content: center;
+}
+#chart {
+    width: 60%;
+    /* align-self: center; */
 }
