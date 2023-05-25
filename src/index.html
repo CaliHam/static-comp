@@ -35,20 +35,25 @@
             </div>
             <form id="categories-select">
                 <h2>Categories</h2>
-                <input type="checkbox" class="admin" checked="checked">
-                <label for="admin" class="admin"> Administration</label><br>
-                <input type="checkbox" class="design" value="design">
-                <label for="design" class="design"> Design</label><br>
-                <input type="checkbox" class="exec" value="exec">
-                <label for="exec" class="exec"> Executive</label><br>
-                <input type="checkbox" class="hr" value="hr">
-                <label for="hr" class="hr"> Human Resources</label><br>
+                <input type="checkbox" id="admin" checked="checked">
+                <label for="admin"> Administration</label><br>
+                <input type="checkbox" id="design" value="design">
+                <label for="design"> Design</label><br>
+                <input type="checkbox" id="exec" value="exec">
+                <label for="exec"> Executive</label><br>
+                <input type="checkbox" id="hr" value="hr">
+                <label for="hr"> Human Resources</label><br>
             </form>
         </aside>
         <main>
-            <header>
-                <nav>
-                    <!-- menu button, search bar, add user? calender? view all? -->
+            <header id="page-nav-container">
+                <nav id="page-nav">
+                    <button type="button"><img src="../assets/icons/menu.png"></button>
+                    <label for="search"><img src="../assets/icons/search.png"></label>
+                    <input type="search" id="search" placeholder="Search for a job, task or resume">
+                    <button type="button" id="add-user"><img src="../assets/icons/add-user.png"></button>
+                    <button type="button"><img src="../assets/icons/calendar.png"></button>
+                    <button type="button"><img src="../assets/icons/9 buttons.png"></button>
                 </nav>
             </header>
             <article>
