@@ -83,7 +83,7 @@ main {
 
 /* TOP NAV AREA */
 
-#page-nav-container {
+#page-nav-container, #page-title  {
     width: -webkit-fill-available;
     display: flex;
 }
@@ -96,13 +96,13 @@ main {
     width: inherit;
     display: flex;
     /* justify-content: space-between; */
-    border-bottom: 1px solid rgba(128, 128, 128, 0.811);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.7);
 }
 
 #page-nav > button {
     margin: 0;
     padding: 20px;
-    border-right: 1px solid rgba(128, 128, 128, 0.811);
+    border-right: 1px solid rgba(128, 128, 128, 0.7);
 }
 
 #search {
@@ -119,10 +119,59 @@ main {
 
 /* MAIN PAGE BODY */
 
+#page-title {
+    justify-content: space-between;
+}
+
+#listing-title {
+    margin: 3%;
+}
+
+#listing-title > p {
+    margin: 5px;
+}
+
+#listing-title > h1 {
+    font-size: xx-large;
+    font-weight: normal;
+    margin: 5px;
+}
+
+#listing-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 3%;
+}
+
+#listing-nav > button, #listing-nav > p {
+    align-self: center;
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    border-radius: 50%;
+    padding: 10px;
+    font-size: small;
+    margin: 6px;
+}
+
+#listing-nav > button > img {
+    height: 15px;
+}
+
+#listing-nav > p {
+    border-radius: 25px;
+    padding: 7px 17px;
+}
+
+#location {
+    height: 15px;
+    width: auto;
+}
+
 #applicant-chart {
     display: flex;
     justify-content: center;
 }
+
 #chart {
     width: 60%;
     /* align-self: center; */
