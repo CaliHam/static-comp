@@ -1,0 +1,91 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+/* SIDE NAV AREA */
+
+#user-nav, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 1;
+}
+
+#user-nav {
+    width: 15%;
+    height: 100vh;
+    color: white;
+    background-color: #012A4A;
+}
+
+#user-info {
+    margin: 25px;
+    width: auto;
+    height: 70px;
+}
+
+#profile-pic {
+    height: 80%;
+    width: auto;
+}
+
+#user-info > figcaption {
+    text-align: center;
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: #2A6F97;
+    font-size: small;
+    margin-top: 40px;
+}
+
+button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    align-self: flex-start;
+    margin: 6px;
+    font-size: 15px;
+}
+
+input {
+    margin-bottom: 25px;
+}
+
+label {
+    font-size: small;
+}
+
+button:hover, input:hover {
+    cursor: pointer;
+}
+
+/* MAIN PAGE */
+
+main {
+    order: 2;
+}
+
+#applicant-chart {
+    display: flex;
+    justify-content: center;
+}
+#chart {
+    width: 60%;
+    /* align-self: center; */
+}
