@@ -73,6 +73,7 @@ label {
 
 button:hover {
     cursor: pointer;
+    transition: .2s ease;
 }
 
 /* MAIN PAGE */
@@ -170,7 +171,7 @@ main {
 
 /* JOB PAGE NAV */
 
-#job-page-nav {
+#job-page-nav, #page-break {
     display: flex;
     justify-content: flex-start;
     width: -webkit-fill-available;
@@ -182,12 +183,18 @@ main {
     font-weight: 500;
     color: gray;
     padding: 0px 0px 17px 0px;
-    margin: 5px 38px;
+    margin: 0px 38px;
 }
 
 #selected {
     color: black !important;
     border-bottom: 4px solid rgb(0, 179, 255);
+}
+
+/* JOB PAGE OVERVIEW */
+
+#job-page-overview {
+    background-color: rgb(234, 240, 245);
 }
 
 #applicant-chart {
@@ -197,5 +204,20 @@ main {
 
 #chart {
     width: 60%;
-    /* align-self: center; */
 }
+
+#page-break {
+    align-items: center;
+    margin: 0px 30px;
+}
+
+#page-break > button:hover {
+    transform: translateY(-2px) scale(1.05);
+}
+
+.line {
+    border: none;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.5);
+    width: inherit;
+  }
