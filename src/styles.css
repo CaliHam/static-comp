@@ -3,13 +3,13 @@
 }
 
 html, body {
-    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     display: flex;
     justify-content: space-between;
-    margin: 0;
 }
 
 /* SIDE NAV AREA */
@@ -21,9 +21,14 @@ body {
     order: 1;
 }
 
+main {
+    flex-grow: 1;
+}
+
 #user-nav {
-    width: 15%;
-    height: 100vh;
+    min-width: 11%;
+    /* height: inherit; */
+    overflow-y: auto;
     color: white;
     background-color: #012A4A;
 }
@@ -220,4 +225,53 @@ main {
     height: 1px;
     background-color: rgba(128, 128, 128, 0.5);
     width: inherit;
-  }
+}
+
+/* JOB DESCRIPTION TABLE */
+
+#job-description {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+table {
+    border: 1px solid #2C7DA0;
+    margin: 30px 5px;
+    max-width: 60%;
+}
+
+thead {
+    background-color: #2C7DA0;
+}
+
+/* #edit {
+    
+    /* background-color: #468FAF; */
+/* }  */
+
+th, td {
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    font-size: small;
+    color: #012A4A;
+}
+
+th, .long {
+    white-space: nowrap;
+}
+
+thead > tr > td, th {
+    color: white;
+}
+
+#tom-nook {
+    width: 50px;
+    align-self: center;
+}
+
+#share-job {
+    display: flex;
+    flex-direction: column;
+    
+}
