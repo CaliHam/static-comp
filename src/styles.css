@@ -245,10 +245,9 @@ thead {
     background-color: #2C7DA0;
 }
 
-/* #edit {
-    
-    /* background-color: #468FAF; */
-/* }  */
+#edit {
+    background-color: #468FAF;
+}  
 
 th, td {
     border-bottom: 1px solid #ccc;
@@ -267,11 +266,48 @@ thead > tr > td, th {
 
 #tom-nook {
     width: 50px;
-    align-self: center;
 }
 
-#share-job {
+/* SHARE ASIDE */
+
+#share-job, #social-buttons {
     display: flex;
     flex-direction: column;
-    
+    min-width: 30%;
+}
+
+/* #share-job {
+    max-width: 40%;
+} */
+
+#social-buttons {
+    align-items: flex-start;
+}
+
+.social-media {
+    position: relative;
+    width: 70%;
+    align-self: center;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    position: absolute;
+    left: 15px;
+}
+
+#facebook {
+    background-color: #4267B2;
+}
+
+#twitter {
+    background-color: #1DA1F2;
+}
+
+#linkedin {
+    background-color: #0A66C2;
 }
