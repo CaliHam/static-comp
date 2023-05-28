@@ -3,13 +3,13 @@
 }
 
 html, body {
-    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     display: flex;
     justify-content: space-between;
-    margin: 0;
 }
 
 /* SIDE NAV AREA */
@@ -22,8 +22,8 @@ body {
 }
 
 #user-nav {
-    width: 15%;
-    height: 100vh;
+    min-width: 11%;
+    overflow-y: auto;
     color: white;
     background-color: #012A4A;
 }
@@ -43,15 +43,26 @@ body {
     text-align: center;
 }
 
+#user-down-arrow {
+    width: 10px;
+    margin: 0;
+}
+
+#main-nav, #admin-nav, #categories-select {
+    width: -webkit-fill-available;
+}
+
 .side-nav {
     display: flex;
     flex-direction: column;
+    position: relative;
+    width: inherit;
 }
 
 h2 {
     color: #2A6F97;
     font-size: small;
-    margin-top: 40px;
+    margin: 40px 20px 20px;
 }
 
 button {
@@ -63,6 +74,21 @@ button {
     font-size: 15px;
 }
 
+.side-nav > button {
+    width: inherit;
+    padding: 5px;
+    display: flex;
+}
+
+.nav-icon {
+    margin-right: 5px;
+}
+
+.side-nav > button:hover, .current-page {
+    color: #ccc;
+    background-color: #013A63;
+}
+
 input {
     margin-bottom: 25px;
 }
@@ -71,21 +97,356 @@ label {
     font-size: small;
 }
 
-button:hover, input:hover {
+button:hover {
     cursor: pointer;
+    transition: .2s ease;
+}
+
+#categories-container {
+    margin: 10px;
+}
+
+#admin {
+    accent-color: #effa57;
+}
+
+#design {
+    accent-color: #007ec2
+}
+
+#exec {
+    accent-color: #df1555
+}
+
+#hr {
+    accent-color: #08be63
 }
 
 /* MAIN PAGE */
 
 main {
     order: 2;
+    flex-grow: 1;
+}
+
+/* TOP NAV AREA */
+
+#page-nav-container, #page-title  {
+    width: -webkit-fill-available;
+    display: flex;
+}
+
+#add-user {
+    background-color: rgb(0, 179, 255);
+}
+
+#page-nav {
+    width: inherit;
+    display: flex;
+    /* justify-content: space-between; */
+    border-bottom: 1px solid rgba(128, 128, 128, 0.7);
+}
+
+#page-nav > button {
+    margin: 0;
+    padding: 20px;
+    border-right: 1px solid rgba(128, 128, 128, 0.7);
+}
+
+#search {
+    border: none;
+    min-height: max-content;
+    width: inherit;
+    margin-top: 17px;
+    padding: 5px;
+}
+
+#page-nav > label {
+    margin: 20px 0px 0px 20px;
+}
+
+/* MAIN PAGE BODY */
+
+#page-title {
+    justify-content: space-between;
+}
+
+#listing-title {
+    margin: 3%;
+}
+
+#listing-title > p {
+    margin: 5px;
+    color: gray;
+}
+
+#listing-title > h1 {
+    font-size: xx-large;
+    font-weight: normal;
+    margin: 5px;
+}
+
+#listing-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 3%;
+}
+
+#listing-nav > button, #listing-nav > p {
+    align-self: center;
+    border: 1px solid rgba(128, 128, 128, 0.7);
+    border-radius: 50%;
+    padding: 10px;
+    font-size: small;
+    margin: 6px;
+}
+
+#listing-nav > button > img {
+    height: 15px;
+}
+
+#listing-nav > p {
+    border-radius: 25px;
+    padding: 7px 17px;
+}
+
+#location {
+    height: 15px;
+    width: auto;
+}
+
+/* JOB PAGE NAV */
+
+#job-page-nav, #page-break {
+    display: flex;
+    justify-content: flex-start;
+    width: -webkit-fill-available;
+    /* margin-left: 25px; */
+}
+
+#job-page-nav > button {
+    font-size: small;
+    font-weight: 500;
+    color: gray;
+    padding: 0px 0px 17px 0px;
+    margin: 0px 38px;
+}
+
+#selected {
+    color: black !important;
+    border-bottom: 4px solid rgb(0, 179, 255);
+}
+
+/* JOB PAGE OVERVIEW */
+
+#job-page-overview {
+    background-color: rgb(234, 240, 245);
 }
 
 #applicant-chart {
     display: flex;
     justify-content: center;
 }
+
 #chart {
     width: 60%;
-    /* align-self: center; */
+}
+
+#page-break {
+    align-items: center;
+    margin: 0px 30px;
+}
+
+#page-break > button:hover {
+    transform: translateY(-2px) scale(1.05);
+}
+
+.line {
+    border: none;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.5);
+    width: inherit;
+}
+
+/* JOB DESCRIPTION TABLE */
+
+#job-description {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 30px;
+    max-width: 60%;
+}
+
+thead {
+    background-color: #2C7DA0;
+}
+
+#highlight {
+    padding: 10px;
+    background-color: #468FAF;
+    margin: 0;
+    font-size: small;
+}  
+
+#edit {
+    width: 12px;
+}
+
+th, td {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    font-size: small;
+    color: #012A4A;
+}
+
+th, .long {
+    white-space: nowrap;
+}
+
+thead > tr > td, th {
+    color: white;
+}
+
+#tom-nook {
+    width: 50px;
+}
+
+/* SHARE ASIDE */
+
+#share-job, #social-buttons {
+    display: flex;
+    flex-direction: column;
+    min-width: 30%;
+}
+
+#share-job {
+    margin-top: 30px;
+}
+
+#social-buttons {
+    align-items: flex-start;
+}
+
+.social-media {
+    position: relative;
+    width: 70%;
+    align-self: center;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    position: absolute;
+    left: 15px;
+}
+
+#facebook {
+    background-color: #4267B2;
+}
+
+#twitter {
+    background-color: #1DA1F2;
+}
+
+#linkedin {
+    background-color: #0A66C2;
+}
+
+/* Links */
+
+#links-container {
+    color: rgb(95, 95, 95);
+    width: 70%;
+    align-self: center;
+}
+
+.links {
+    position: relative;
+}
+
+#links-container > .line {
+    width: auto;
+}
+
+.link-icon {
+    width: 17px;
+} 
+
+.links > p {
+    font-size: small;
+}
+
+.link-to-site {
+    width: max-content;
+}
+
+.link-email, .links > button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 0;
+}
+
+.link-email {
+    width: -webkit-fill-available;
+    color: rgb(95, 95, 95);
+}
+
+.links > button {
+    background-color:rgb(0, 164, 164);
+    margin: 0;
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 1250px) {
+    #user-nav{
+        min-width: 13%;
+    }
+    #page-nav-container, #job-page-nav, #page-break {
+        width: auto;
+        align-items: center;
+    }
+    #job-page-nav > button {
+        margin: 10px;
+    }
+    #job-description, #page-title {
+        flex-direction: column;
+        align-items: center;
+    }
+    #share-job {
+        width: auto;
+    }
+    #page-nav > button {
+        border-left: 1px solid rgba(128, 128, 128, 0.7);
+    }
+}
+
+@media (max-width: 1120px) {
+    #user-nav{
+        min-width: 20%;
+    }
+}
+
+@media (max-width: 820px) {
+    #job-page-nav {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 700px) {
+    #user-nav{
+        min-width: 25%;
+    }
 }

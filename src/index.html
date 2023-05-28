@@ -11,72 +11,154 @@
         <aside id="user-nav">
             <figure id="user-info">
                 <img src="../assets/images/Bolson.png" id="profile-pic" alt="Bolson Profile Picture">
-                <figcaption>Bolson ⌄</figcaption>
+                <figcaption>Bolson<button><img src="../assets/icons/down-arrow.png" id="user-down-arrow" alt="down arrow"></button></figcaption>
             </figure>
             <div id="main-nav">
                 <h2>Main</h2>
                 <nav class="side-nav">
-                    <button type="button">🏠 HOME</button>
-                    <button type="button">💼 JOBS</button>
-                    <button type="button">📄 RESUMES</button>
-                    <button type="button">📋 TASKS</button>
-                    <button type="button">🗓️ CALENDAR</button>
+                    <button type="button"><img src="../assets/icons/user-nav-icons/home-icon-silhouette.png" class="nav-icon">HOME</button>
+                    <button type="button"><img src="../assets/icons/user-nav-icons/briefcase.png" class="nav-icon">JOBS</button>
+                    <button type="button"><img src="../assets/icons/user-nav-icons/resume.png" class="nav-icon">RESUMES</button>
+                    <button type="button"><img src="../assets/icons/user-nav-icons/checklist.png" class="nav-icon">TASKS</button>
+                    <button type="button"><img src="../assets/icons/user-nav-icons/calendar-nav.png" class="nav-icon">CALENDAR</button>
                 </nav>
             </div>
             <div id="admin-nav">
                 <h2>Admin</h2>
                 <nav class="side-nav">
-                    <button type="button">👥 USERS</button>
-                    <button type="button">📍 LOCATIONS</button>
-                    <button type="button">📈 WORKFLOWS</button>
-                    <button type="button">📒 JOB BOARDS</button>
-                    <button type="button">💬 SOCIAL</button>
+                    <button type="button"><img src="../assets/icons/user-nav-icons/group.png" class="nav-icon">USERS</button>
+                    <button type="button"><img src="../assets/icons/user-nav-icons/location-white.png" class="nav-icon">LOCATIONS</button>
+                    <button type="button"><img src="../assets/icons/user-nav-icons/use-case.png" class="nav-icon">WORKFLOWS</button>
+                    <button type="button" class="current-page"><img src="../assets/icons/user-nav-icons/card.png" class="nav-icon">JOB BOARDS</button>
+                    <button type="button"><img src="../assets/icons/user-nav-icons/share.png" class="nav-icon">SOCIAL</button>
                 </nav>
             </div>
             <form id="categories-select">
                 <h2>Categories</h2>
-                <input type="checkbox" class="admin" checked="checked">
-                <label for="admin" class="admin"> Administration</label><br>
-                <input type="checkbox" class="design" value="design">
-                <label for="design" class="design"> Design</label><br>
-                <input type="checkbox" class="exec" value="exec">
-                <label for="exec" class="exec"> Executive</label><br>
-                <input type="checkbox" class="hr" value="hr">
-                <label for="hr" class="hr"> Human Resources</label><br>
+                <div id="categories-container">
+                    <input type="checkbox" id="admin" checked="checked">
+                    <label for="admin"> Administration</label><br>
+                    <input type="checkbox" id="design">
+                    <label for="design"> Design</label><br>
+                    <input type="checkbox" id="exec">
+                    <label for="exec"> Executive</label><br>
+                    <input type="checkbox" id="hr">
+                    <label for="hr"> Human Resources</label><br>
+                </div>
             </form>
         </aside>
         <main>
-            <header>
-                <nav>
-                    <!-- menu button, search bar, add user? calender? view all? -->
+            <header id="page-nav-container">
+                <nav id="page-nav">
+                    <button type="button"><img src="../assets/icons/menu.png"></button>
+                    <label for="search"><img src="../assets/icons/search.png"></label>
+                    <input type="search" id="search" placeholder="Search for a job, task or resume">
+                    <button type="button" id="add-user"><img src="../assets/icons/add-user.png"></button>
+                    <button type="button"><img src="../assets/icons/calendar.png"></button>
+                    <button type="button"><img src="../assets/icons/9 buttons.png"></button>
                 </nav>
             </header>
-            <article>
+            <article id="page-title">
                 <section id="listing-title">
                     <h1>Legendary Video Game NPC Extraordinaire</h1>
-                    <p><sub>The Enchanted Realm of Ludicrosia ﹒</sub> Preview this post</p>
+                    <p><sub><img src="../assets/icons/location.png" id="location"> The Enchanted Realm of Ludicrosia ﹒<a href="https://github.com/CaliHam">Preview this post</a></sub></p>
                 </section>
-                <div>
-                    <!-- buttons for open, favorite, edit, delete -->
-                </div>
+                <nav id="listing-nav">
+                    <p><b>🟢 OPEN</b></p>
+                    <button type="button"><img src="../assets/icons/bookmark.png"></button>
+                    <button type="button"><img src="../assets/icons/pencil.png"></button>
+                    <button type="button"><img src="../assets/icons/bin-with-lid.png"></button>
+                </nav>
             </article>
-            <nav>
-                <!-- buttons for pages -->
+            <nav id="job-page-nav">
+                <button type="button" id="selected">SUMMARY</button>
+                <button type="button">APPLICANTS</button>
+                <button type="button">JOB BOARD</button>
+                <button type="button">INTERVIEWS</button>
+                <button type="button">ACTIVITY</button>
+                <button type="button">BROADCAST</button>
+                <button type="button">NOTIFICATIONS</button>
             </nav>
-            <figure id="applicant-chart">
-                <img src="../assets/images/Applicants Chart - clear.png" id="chart" alt="Charts of Total Applicants">
-            </figure>
-            <hr>
-            <section>
-                <article id="job-description">
-
-                </article>
-                <aside id="share-job">
-                    <nav>
-                        <!-- link to facebook, titte, linkedin -->
-                    </nav>
-                </aside>
-            </section>
+            <article id="job-page-overview">
+                <figure id="applicant-chart">
+                    <img src="../assets/images/Applicants Chart - clear.png" id="chart" alt="Charts of Total Applicants">
+                </figure>
+                <div id="page-break">
+                    <hr class="line">
+                    <button type="button"><img src="../assets/icons/chevron.png" alt="arrow fold"></button>
+                    <hr class="line">
+                </div>
+                <section id="job-description">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>JOB DESCRIPTION</th>
+                                <td><button id="highlight"><img src="../assets/icons/draw.png" id="edit" alt="pencil icon"> EDIT</button></td>
+                            </tr>
+                        </thead>
+                            <tr>
+                                <td><b>POSITION TITLE</b></td>
+                                <td>Legendary Video Game NPC Extraordinaire</td>
+                            </tr>
+                            <tr>
+                                <td><b>LOCATION</b></td>
+                                <td>The Enchanted Realm of Ludicrosia</td>
+                            </tr>
+                            <tr>
+                                <td class="long"><b>EMPLOYMENT TYPE</b></td>
+                                <td>Full-time</td>
+                            </tr>
+                            <tr>
+                                <td><b>EXPERIENCE</b></td>
+                                <td>3+ years</td>
+                            </tr>
+                            <tr>
+                                <td><b>STATUS</b></td>
+                                <td>Open</td>
+                            </tr>
+                            <tr>
+                                <td><b>DESCRIPTION</b></td>
+                                <td>Are you ready to embrace the extraordinary in the seemingly mundane? Step into the realm of the Extraordinary Boring NPC Specialist, where the art of monotony becomes a thrilling endeavor! In our expansive and dynamic virtual universe, we're seeking individuals who can transform the most mundane NPC roles into captivating experiences. As an Extraordinary Boring NPC Specialist, you'll master the art of standing still, delivering seemingly ordinary dialogue, and watching players skip past you without a second thought. But here's the twist: you'll also possess the power to captivate those brave few who take the time to engage with you. With subtle hints, hidden secrets, and unexpected revelations, you'll unlock a world of intrigue within the depths of mundane encounters. Your ability to infuse even the dullest moments with sparks of excitement and hidden lore will leave players astonished and eager for more. Join us in turning the "boring" into the extraordinary, as we redefine the role of NPCs and create unforgettable experiences that defy expectations. Embrace the challenge, step into the spotlight, and let your seemingly dull existence become a portal to unexpected adventures. Are you ready to turn mundanity into magic? Apply now and be the catalyst that transforms the gaming landscape, one seemingly boring NPC at a time!</td>
+                            </tr>
+                            <tr>
+                                <td><b>HIRING LEAD</b></td>
+                                <td><img src="../assets/images/tom-nook.png" id="tom-nook" alt="Tom Nook Profile Pic"> Tom Nook</td>
+                            </tr>
+                            <tr>
+                                <td class="long"><b>APPROVED SALARY</b></td>
+                                <td><b>$38,000</b></td>
+                            </tr>
+                        </table>
+                    <aside id="share-job">
+                        <nav id="social-buttons">
+                            <button type="button" id="facebook" class="social-media"><img src="../assets/icons/facebook.png" alt="facebook icon" class="icon">Post to Facebook</button>
+                            <button type="button" id="twitter" class="social-media"><img src="../assets/icons/twitter.png" alt="twitter icon" class="icon">Tweet this Job</button>
+                            <button type="button" id="linkedin" class="social-media"><img src="../assets/icons/linkedin.png" alt="linkedin icon" class="icon">Post to Linkedin</button>
+                        </nav>
+                        <div id="links-container">
+                            <div class="links">
+                                <h3><img src="../assets/icons/earth-globe.png" class="link-icon" alt="globe icon"> Link to this Job</h3>
+                                <p>This link can be used anywhere for sharing the job to any other website.</p>
+                                <input type="url" value="https://caliham.github.io/static-comp/" class="link-email">
+                                <button>Copy</button> 
+                            </div>
+                            <hr class="line">
+                            <div class="links">
+                                <h3><img src="../assets/icons/widget.png" class="link-icon" alt="widget icon"> Use the Button Widget</h3>
+                                <p>This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
+                                <input type="url" value="https://caliham.github.io/static-comp/" class="link-email">
+                                <button>Copy</button> 
+                            </div>
+                            <hr class="line">
+                            <div class="links">
+                                <h3><img src="../assets/icons/paper-plane.png" class="link-icon" alt="paper airplane"> Upload Resumes by Email</h3>
+                                <p>You can automatically upload multiple resumes to this job by emailing the address below.</p>
+                                <input type="email" value="tomnook@gmail.com" class="link-email">
+                            </div>
+                        </div>
+                    </aside>
+                </section>
+            </article>
         </main>
     </body>
 </html>
