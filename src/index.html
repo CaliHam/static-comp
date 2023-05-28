@@ -11,38 +11,40 @@
         <aside id="user-nav">
             <figure id="user-info">
                 <img src="../assets/images/Bolson.png" id="profile-pic" alt="Bolson Profile Picture">
-                <figcaption>Bolson ⌄</figcaption>
+                <figcaption>Bolson<button><img src="../assets/icons/down-arrow.png" id="user-down-arrow" alt="down arrow"></button></figcaption>
             </figure>
             <div id="main-nav">
                 <h2>Main</h2>
                 <nav class="side-nav">
-                    <button type="button">🏠 HOME</button>
-                    <button type="button">💼 JOBS</button>
-                    <button type="button">📄 RESUMES</button>
-                    <button type="button">📋 TASKS</button>
-                    <button type="button">🗓️ CALENDAR</button>
+                    <button type="button"><img src="../assets/icons/user-nav-icons/home-icon-silhouette.png" class="nav-icon">HOME</button>
+                    <button type="button"><img src="../assets/icons/user-nav-icons/briefcase.png" class="nav-icon">JOBS</button>
+                    <button type="button"><img src="../assets/icons/user-nav-icons/resume.png" class="nav-icon">RESUMES</button>
+                    <button type="button"><img src="../assets/icons/user-nav-icons/checklist.png" class="nav-icon">TASKS</button>
+                    <button type="button"><img src="../assets/icons/user-nav-icons/calendar-nav.png" class="nav-icon">CALENDAR</button>
                 </nav>
             </div>
             <div id="admin-nav">
                 <h2>Admin</h2>
                 <nav class="side-nav">
-                    <button type="button">👥 USERS</button>
-                    <button type="button">📍 LOCATIONS</button>
-                    <button type="button">📈 WORKFLOWS</button>
-                    <button type="button">📒 JOB BOARDS</button>
-                    <button type="button">💬 SOCIAL</button>
+                    <button type="button"><img src="../assets/icons/user-nav-icons/group.png" class="nav-icon">USERS</button>
+                    <button type="button"><img src="../assets/icons/user-nav-icons/location-white.png" class="nav-icon">LOCATIONS</button>
+                    <button type="button"><img src="../assets/icons/user-nav-icons/use-case.png" class="nav-icon">WORKFLOWS</button>
+                    <button type="button" class="current-page"><img src="../assets/icons/user-nav-icons/card.png" class="nav-icon">JOB BOARDS</button>
+                    <button type="button"><img src="../assets/icons/user-nav-icons/share.png" class="nav-icon">SOCIAL</button>
                 </nav>
             </div>
             <form id="categories-select">
                 <h2>Categories</h2>
-                <input type="checkbox" id="admin" checked="checked">
-                <label for="admin"> Administration</label><br>
-                <input type="checkbox" id="design" value="design">
-                <label for="design"> Design</label><br>
-                <input type="checkbox" id="exec" value="exec">
-                <label for="exec"> Executive</label><br>
-                <input type="checkbox" id="hr" value="hr">
-                <label for="hr"> Human Resources</label><br>
+                <div id="categories-container">
+                    <input type="checkbox" id="admin" checked="checked">
+                    <label for="admin"> Administration</label><br>
+                    <input type="checkbox" id="design">
+                    <label for="design"> Design</label><br>
+                    <input type="checkbox" id="exec">
+                    <label for="exec"> Executive</label><br>
+                    <input type="checkbox" id="hr">
+                    <label for="hr"> Human Resources</label><br>
+                </div>
             </form>
         </aside>
         <main>
@@ -136,7 +138,7 @@
                         <div id="links-container">
                             <div class="links">
                                 <h3><img src="../assets/icons/earth-globe.png" class="link-icon" alt="globe icon"> Link to this Job</h3>
-                                <p>jfjjsofk fjksofnaokwefnjo sgnoskdfo nsdfoka fnwkw skljfskl fksljaljfa fjasl lafjopw mcma</p>
+                                <p>This link can be used anywhere for sharing the job to any other website.</p>
                                 <input type="url" value="https://caliham.github.io/static-comp/" class="link-email">
                                 <button>Copy</button> 
                             </div>
