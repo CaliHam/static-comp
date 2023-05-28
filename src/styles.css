@@ -236,8 +236,8 @@ main {
 }
 
 table {
-    border: 1px solid #2C7DA0;
-    margin: 30px 5px;
+    border-collapse: collapse;
+    margin: 30px;
     max-width: 60%;
 }
 
@@ -245,13 +245,22 @@ thead {
     background-color: #2C7DA0;
 }
 
-#edit {
+#highlight {
+    padding: 10px;
     background-color: #468FAF;
+    margin: 0;
+    font-size: small;
 }  
 
+#edit {
+    width: 12px;
+}
+
 th, td {
+    border: none;
+    outline: none;
     border-bottom: 1px solid #ccc;
-    padding: 15px;
+    padding: 20px;
     font-size: small;
     color: #012A4A;
 }
@@ -276,9 +285,9 @@ thead > tr > td, th {
     min-width: 30%;
 }
 
-/* #share-job {
-    max-width: 40%;
-} */
+#share-job {
+    margin-top: 30px;
+}
 
 #social-buttons {
     align-items: flex-start;
@@ -310,4 +319,51 @@ thead > tr > td, th {
 
 #linkedin {
     background-color: #0A66C2;
+}
+
+/* Links */
+
+#links-container {
+    color: rgb(95, 95, 95);
+    width: 70%;
+    align-self: center;
+}
+
+.links {
+    position: relative;
+}
+
+#links-container > .line {
+    width: auto;
+}
+
+.link-icon {
+    width: 17px;
+} 
+
+.links > p {
+    font-size: small;
+}
+
+.link-to-site {
+    width: max-content;
+}
+
+.link-email, .links > button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 0;
+}
+
+.link-email {
+    width: -webkit-fill-available;
+    color: rgb(95, 95, 95);
+}
+
+.links > button {
+    background-color:rgb(0, 164, 164);
+    margin: 0;
+    position: absolute;
+    right: 0;
 }
